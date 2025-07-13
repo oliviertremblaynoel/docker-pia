@@ -1,0 +1,16 @@
+name: dev
+services:
+  wg-pia:
+    build: .
+    environment:
+      - PIA_USER=$PIA_USER
+      - PIA_PASS=$PIA_PW
+      - PREFERRED_REGION=$REGION
+      - DIP_TOKEN=no
+      - PIA_DNS=true
+      - PIA_PF=true
+      - PIA_CONNECT=true
+      - VPN_PROTOCOL=wireguard
+      - DISABLE_IPV6=yes
+    cap_add:
+      - NET_ADMIN
