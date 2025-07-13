@@ -7,5 +7,4 @@ on:
   workflow_dispatch:
 
 jobs:
-  standardized:
-    uses: oliviertremblaynoel/gha-pipelines/.github/workflows/ci.yml@main
+  uses: oliviertremblaynoel/gha-pipelines/.github/workflows/ci.yml@main
